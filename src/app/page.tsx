@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { ConfettiSideCannons } from "@/components/confetti-side-cannons";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -185,6 +186,11 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+      <section id="confetti-button">
+        <div className="w-full py-1 flex justify-center">
+          <ConfettiSideCannons />
         </div>
       </section>
       {/* <section id="hackathons">
