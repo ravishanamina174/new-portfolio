@@ -63,50 +63,64 @@ function SmallDiagram({ type }: { type: string }) {
   // Simple inline SVG diagrams to avoid adding image assets.
   if (type === "layout") {
     return (
-      <svg
-        className="w-32 h-20 rounded-md bg-white/5 p-1"
-        viewBox="0 0 120 80"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect x="2" y="2" width="116" height="76" rx="6" stroke="rgba(255,255,255,0.08)" />
-        <rect x="6" y="6" width="40" height="28" rx="3" fill="rgba(255,255,255,0.03)" />
-        <rect x="50" y="6" width="64" height="28" rx="3" fill="rgba(255,255,255,0.02)" />
-        <rect x="6" y="38" width="108" height="36" rx="3" fill="rgba(255,255,255,0.02)" />
+      <svg className="w-32 h-20 rounded-md p-1" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* Light mode version */}
+        <g className="dark:hidden">
+          <rect x="2" y="2" width="116" height="76" rx="6" fill="#f8fafc" stroke="#e6e6e6" />
+          <rect x="6" y="6" width="40" height="28" rx="3" fill="#eef2ff" />
+          <rect x="50" y="6" width="64" height="28" rx="3" fill="#f1f5f9" />
+          <rect x="6" y="38" width="108" height="36" rx="3" fill="#f1f5f9" />
+        </g>
+
+        {/* Dark mode version */}
+        <g className="hidden dark:block">
+          <rect x="2" y="2" width="116" height="76" rx="6" stroke="rgba(255,255,255,0.08)" />
+          <rect x="6" y="6" width="40" height="28" rx="3" fill="rgba(255,255,255,0.03)" />
+          <rect x="50" y="6" width="64" height="28" rx="3" fill="rgba(255,255,255,0.02)" />
+          <rect x="6" y="38" width="108" height="36" rx="3" fill="rgba(255,255,255,0.02)" />
+        </g>
       </svg>
     );
   }
 
   if (type === "stream") {
     return (
-      <svg
-        className="w-32 h-20 rounded-md bg-white/5 p-1"
-        viewBox="0 0 120 80"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect x="2" y="2" width="116" height="76" rx="6" stroke="rgba(255,255,255,0.08)" />
-        <circle cx="30" cy="40" r="6" fill="rgba(255,255,255,0.06)" />
-        <circle cx="54" cy="40" r="6" fill="rgba(255,255,255,0.04)" />
-        <circle cx="78" cy="40" r="6" fill="rgba(255,255,255,0.03)" />
-        <path d="M20 55h80" stroke="rgba(255,255,255,0.03)" strokeWidth={2} />
+      <svg className="w-32 h-20 rounded-md p-1" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g className="dark:hidden">
+          <rect x="2" y="2" width="116" height="76" rx="6" fill="#f8fafc" stroke="#e6e6e6" />
+          <circle cx="30" cy="40" r="6" fill="#e6eef8" />
+          <circle cx="54" cy="40" r="6" fill="#eef2ff" />
+          <circle cx="78" cy="40" r="6" fill="#f1f5f9" />
+          <path d="M20 55h80" stroke="#e6e6e6" strokeWidth={2} />
+        </g>
+        <g className="hidden dark:block">
+          <rect x="2" y="2" width="116" height="76" rx="6" stroke="rgba(255,255,255,0.08)" />
+          <circle cx="30" cy="40" r="6" fill="rgba(255,255,255,0.06)" />
+          <circle cx="54" cy="40" r="6" fill="rgba(255,255,255,0.04)" />
+          <circle cx="78" cy="40" r="6" fill="rgba(255,255,255,0.03)" />
+          <path d="M20 55h80" stroke="rgba(255,255,255,0.03)" strokeWidth={2} />
+        </g>
       </svg>
     );
   }
 
   if (type === "hooks") {
     return (
-      <svg
-        className="w-32 h-20 rounded-md bg-white/5 p-1"
-        viewBox="0 0 120 80"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect x="2" y="2" width="116" height="76" rx="6" stroke="rgba(255,255,255,0.08)" />
-        <rect x="10" y="14" width="30" height="22" rx="4" fill="rgba(255,255,255,0.03)" />
-        <rect x="45" y="14" width="30" height="22" rx="4" fill="rgba(255,255,255,0.02)" />
-        <rect x="80" y="14" width="30" height="22" rx="4" fill="rgba(255,255,255,0.01)" />
-        <path d="M25 40h70" stroke="rgba(255,255,255,0.03)" strokeWidth={2} />
+      <svg className="w-32 h-20 rounded-md p-1" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g className="dark:hidden">
+          <rect x="2" y="2" width="116" height="76" rx="6" fill="#f8fafc" stroke="#e6e6e6" />
+          <rect x="10" y="14" width="30" height="22" rx="4" fill="#eef2ff" />
+          <rect x="45" y="14" width="30" height="22" rx="4" fill="#f1f5f9" />
+          <rect x="80" y="14" width="30" height="22" rx="4" fill="#f8fafc" />
+          <path d="M25 40h70" stroke="#e6e6e6" strokeWidth={2} />
+        </g>
+        <g className="hidden dark:block">
+          <rect x="2" y="2" width="116" height="76" rx="6" stroke="rgba(255,255,255,0.08)" />
+          <rect x="10" y="14" width="30" height="22" rx="4" fill="rgba(255,255,255,0.03)" />
+          <rect x="45" y="14" width="30" height="22" rx="4" fill="rgba(255,255,255,0.02)" />
+          <rect x="80" y="14" width="30" height="22" rx="4" fill="rgba(255,255,255,0.01)" />
+          <path d="M25 40h70" stroke="rgba(255,255,255,0.03)" strokeWidth={2} />
+        </g>
       </svg>
     );
   }

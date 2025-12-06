@@ -1,4 +1,5 @@
 import { getBlogPosts, getPost } from "@/data/blog";
+import Link from "next/link";
 import { DATA } from "@/data/resume";
 import { formatDate } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -75,50 +76,61 @@ const DUMMY_POSTS = [
 function SmallDiagram({ type }: { type: string }) {
   if (type === "layout") {
     return (
-      <svg
-        className="w-full h-44 rounded-md bg-white/5 p-2"
-        viewBox="0 0 240 140"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect x="2" y="2" width="236" height="136" rx="8" stroke="rgba(255,255,255,0.06)" />
-        <rect x="12" y="12" width="80" height="40" rx="6" fill="rgba(255,255,255,0.03)" />
-        <rect x="104" y="12" width="124" height="40" rx="6" fill="rgba(255,255,255,0.02)" />
-        <rect x="12" y="64" width="216" height="64" rx="6" fill="rgba(255,255,255,0.02)" />
+      <svg className="w-full h-44 rounded-md p-2" viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g className="dark:hidden">
+          <rect x="2" y="2" width="236" height="136" rx="8" fill="#ffffff" stroke="#e6e6e6" />
+          <rect x="12" y="12" width="80" height="40" rx="6" fill="#eef2ff" />
+          <rect x="104" y="12" width="124" height="40" rx="6" fill="#f1f5f9" />
+          <rect x="12" y="64" width="216" height="64" rx="6" fill="#f1f5f9" />
+        </g>
+        <g className="hidden dark:block">
+          <rect x="2" y="2" width="236" height="136" rx="8" stroke="rgba(255,255,255,0.06)" />
+          <rect x="12" y="12" width="80" height="40" rx="6" fill="rgba(255,255,255,0.03)" />
+          <rect x="104" y="12" width="124" height="40" rx="6" fill="rgba(255,255,255,0.02)" />
+          <rect x="12" y="64" width="216" height="64" rx="6" fill="rgba(255,255,255,0.02)" />
+        </g>
       </svg>
     );
   }
 
   if (type === "stream") {
     return (
-      <svg
-        className="w-full h-44 rounded-md bg-white/5 p-2"
-        viewBox="0 0 240 140"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect x="2" y="2" width="236" height="136" rx="8" stroke="rgba(255,255,255,0.06)" />
-        <circle cx="48" cy="70" r="10" fill="rgba(255,255,255,0.06)" />
-        <circle cx="96" cy="70" r="10" fill="rgba(255,255,255,0.04)" />
-        <circle cx="144" cy="70" r="10" fill="rgba(255,255,255,0.03)" />
-        <path d="M20 110h200" stroke="rgba(255,255,255,0.03)" strokeWidth={2} />
+      <svg className="w-full h-44 rounded-md p-2" viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g className="dark:hidden">
+          <rect x="2" y="2" width="236" height="136" rx="8" fill="#ffffff" stroke="#e6e6e6" />
+          <circle cx="48" cy="70" r="10" fill="#e6eef8" />
+          <circle cx="96" cy="70" r="10" fill="#eef2ff" />
+          <circle cx="144" cy="70" r="10" fill="#f1f5f9" />
+          <path d="M20 110h200" stroke="#e6e6e6" strokeWidth={2} />
+        </g>
+        <g className="hidden dark:block">
+          <rect x="2" y="2" width="236" height="136" rx="8" stroke="rgba(255,255,255,0.06)" />
+          <circle cx="48" cy="70" r="10" fill="rgba(255,255,255,0.06)" />
+          <circle cx="96" cy="70" r="10" fill="rgba(255,255,255,0.04)" />
+          <circle cx="144" cy="70" r="10" fill="rgba(255,255,255,0.03)" />
+          <path d="M20 110h200" stroke="rgba(255,255,255,0.03)" strokeWidth={2} />
+        </g>
       </svg>
     );
   }
 
   if (type === "hooks") {
     return (
-      <svg
-        className="w-full h-44 rounded-md bg-white/5 p-2"
-        viewBox="0 0 240 140"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect x="2" y="2" width="236" height="136" rx="8" stroke="rgba(255,255,255,0.06)" />
-        <rect x="18" y="20" width="48" height="34" rx="4" fill="rgba(255,255,255,0.03)" />
-        <rect x="86" y="20" width="48" height="34" rx="4" fill="rgba(255,255,255,0.02)" />
-        <rect x="154" y="20" width="48" height="34" rx="4" fill="rgba(255,255,255,0.01)" />
-        <path d="M30 70h180" stroke="rgba(255,255,255,0.03)" strokeWidth={2} />
+      <svg className="w-full h-44 rounded-md p-2" viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g className="dark:hidden">
+          <rect x="2" y="2" width="236" height="136" rx="8" fill="#ffffff" stroke="#e6e6e6" />
+          <rect x="18" y="20" width="48" height="34" rx="4" fill="#eef2ff" />
+          <rect x="86" y="20" width="48" height="34" rx="4" fill="#f1f5f9" />
+          <rect x="154" y="20" width="48" height="34" rx="4" fill="#f8fafc" />
+          <path d="M30 70h180" stroke="#e6e6e6" strokeWidth={2} />
+        </g>
+        <g className="hidden dark:block">
+          <rect x="2" y="2" width="236" height="136" rx="8" stroke="rgba(255,255,255,0.06)" />
+          <rect x="18" y="20" width="48" height="34" rx="4" fill="rgba(255,255,255,0.03)" />
+          <rect x="86" y="20" width="48" height="34" rx="4" fill="rgba(255,255,255,0.02)" />
+          <rect x="154" y="20" width="48" height="34" rx="4" fill="rgba(255,255,255,0.01)" />
+          <path d="M30 70h180" stroke="rgba(255,255,255,0.03)" strokeWidth={2} />
+        </g>
       </svg>
     );
   }
@@ -268,6 +280,14 @@ export default async function Blog({
       <div className={`w-full rounded-lg overflow-hidden ${dummy.gradient}`}>
         <div className="relative p-6 sm:p-12 rounded-lg text-white">
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-6">
+              <div className="absolute left-4 top-4">
+                <Link href="/blog" className="inline-flex items-center gap-2 rounded-md bg-white/10 hover:bg-white/20 px-3 py-1 text-sm text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                  <span>Back</span>
+                </Link>
+              </div>
             <div className="flex-1">
               <h1 className="font-semibold text-3xl sm:text-4xl tracking-tight mb-2">{dummy.title}</h1>
               <p className="text-sm sm:text-base text-white/90 max-w-2xl">{dummy.summary}</p>
