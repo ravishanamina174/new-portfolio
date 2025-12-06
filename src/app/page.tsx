@@ -10,6 +10,9 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import { ConfettiSideCannons } from "@/components/confetti-side-cannons";
 
+import {Card,CardContent, CardDescription,CardTitle,} from "@/components/ui/card"
+import { WarpBackground } from "@/components/ui/warp-background"
+
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -192,6 +195,20 @@ export default function Page() {
         <div className="w-full py-1 flex justify-center">
           <ConfettiSideCannons />
         </div>
+      </section>
+      <section id="warp-background">
+        <WarpBackground>
+          <div className="flex items-center justify-center h-10">
+        <Card className="w-90">
+          <CardContent className="flex flex-col gap-2 p-1 ">
+            <CardTitle>"Contact Me to Build Cool Stuff 👩🏻‍🎤"</CardTitle>
+            <CardDescription>
+          Every project starts with a spark. If you’re ready to create, collaborate, and bring fresh ideas to life, message me—let’s build something truly special together.
+            </CardDescription>
+          </CardContent>
+        </Card>
+          </div>
+        </WarpBackground>
       </section>
       {/* <section id="hackathons">
         <div className="space-y-12 w-full py-12">
