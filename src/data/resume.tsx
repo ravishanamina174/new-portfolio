@@ -5,8 +5,8 @@ export const DATA = {
   name: "Ravisha Abeysekara",
   initials: "R",
   url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  location: "Sri lanka",
+  // locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
     "Software Engineer Undergraduate, Engineering scalable systems with MERN, TypeScript, and clean architecture",
   summary:
@@ -210,7 +210,7 @@ certifications: [
     },
     {
       title: "ParkNet - Smart Parking Management System",
-      href: "https://parknet-smarter-cities.vercel.app",
+      href: "https://tcc-frontend-beta.vercel.app",
       dates: "Jun 2025 - Sep 2025",
       active: true,
       description:
@@ -228,7 +228,7 @@ certifications: [
       links: [
         {
           type: "Website",
-          href: "https://parknet-smarter-cities.vercel.app",
+          href: "https://tcc-frontend-beta.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
         {
