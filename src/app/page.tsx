@@ -152,7 +152,7 @@ export default function Page() {
         </div>
       </section>
       <section id="projects">
-        <div className="space-y-12 w-full py-12">
+        <div className="space-y-12 w-full py-2">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -191,7 +191,7 @@ export default function Page() {
         </div>
       </section>
       <section id="confetti-button">
-        <div className="w-full py-1 flex justify-center">
+        <div className="w-full py-1 flex justify-center align-top">
           <ConfettiSideCannons />
         </div>
       </section>
@@ -267,7 +267,7 @@ export default function Page() {
             </div>
             <div className="mt-7 flex justify-center">
             <PixelImage
-               src="/w-1.png"
+               src="/w-3.png"
                customGrid={{ rows: 8, cols: 8 }}
                grayscaleAnimation
               />
@@ -277,7 +277,7 @@ export default function Page() {
       </section>
  
       <section id="contact">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-[-10]">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">

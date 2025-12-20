@@ -27,7 +27,8 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "hello@example.com",
@@ -211,7 +212,7 @@ certifications: [
     {
       title: "ParkNet - Smart Parking Management System",
       href: "https://tcc-frontend-beta.vercel.app",
-      dates: "Jun 2025 - Sep 2025",
+      dates: "Aug 2025 - Sep 2025",
       active: true,
       description:
         "• Built a React TypeScript application with Clerk OAuth authentication, real-time parking management, and Google Maps integration using Vite, Tailwind CSS, and Shadcn/ui.",
