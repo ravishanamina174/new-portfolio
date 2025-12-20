@@ -200,7 +200,7 @@ export default function Page() {
           <div className="flex items-center justify-center h-10">
         <Card className="w-90">
           <CardContent className="flex flex-col gap-2 p-1 ">
-            <CardTitle>"Contact Me to Build Cool Stuff 👩🏻‍🎤"</CardTitle>
+            <CardTitle>Contact Me to Build Cool Stuff 👩🏻‍🎤</CardTitle>
             <CardDescription>
           Every project starts with a spark. If you’re ready to create, collaborate, and bring fresh ideas to life, message me—let’s build something truly special together.
             </CardDescription>
