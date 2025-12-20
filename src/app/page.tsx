@@ -12,6 +12,7 @@ import { ConfettiSideCannons } from "@/components/confetti-side-cannons";
 
 import {Card,CardContent, CardDescription,CardTitle,} from "@/components/ui/card"
 import { WarpBackground } from "@/components/ui/warp-background"
+import { PixelImage } from "@/components/ui/pixel-image";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -252,35 +253,29 @@ export default function Page() {
         </div>
       </section> */}
 
-     <section id="contact-1">
+     <section id="my-workspace">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
-              {/* <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Contact
-              </div> */}
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 My Workspace
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                Clean workspace, clear mind-the perfect setup for learning, coding, and creating.
-                {/* <Link
-                  href={DATA.contact.social.LinkedIn.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  Linkdin
-                </Link>{" "}
-                and I&apos;ll respond whenever I can. Looking forward to connecting! */}
               </p>
+             
+            </div>
+            <div className="mt-7 flex justify-center">
+            <PixelImage
+               src="/w-1.png"
+               customGrid={{ rows: 8, cols: 8 }}
+               grayscaleAnimation
+              />
             </div>
           </BlurFade>
         </div>
       </section>
-
-
-
-
-      
+ 
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
