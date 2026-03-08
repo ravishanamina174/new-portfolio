@@ -8,22 +8,23 @@ export const DATA = {
   location: "Sri lanka",
   // locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Software Engineer Undergraduate, Engineering scalable systems with MERN, TypeScript, and clean architecture",
+    'Software Engineering Undergraduate, Building MERN, React.js and LangChain LLM applications with clean architecture',
   summary:
-    "Software Engineering undergraduate (SLTC, 2023–2027) who developed scalable web applications improving usability and system performance using the MERN stack, React, Next.js, and UI/UX principles. Solved complex problems in academic and personal projects, motivated to create the same impact as a Software Engineer Intern."
+    'Software Engineering undergraduate (SLTC, 2023–2027) who developed scalable web applications and AI agent systems improving usability and system performance using the MERN stack, React, Next.js, LangChain, and UI/UX principles. Solved complex problems in academic and personal projects, motivated to create the same impact as a Software Engineer Intern.'
 ,
-  avatarUrl: "/me.jpg",
+  avatarUrl: "/my1.png",
   skills: [
-    "React",
+    "MERN",
     "Next.js",
     "Typescript",
-    "Javascript",
-    "Node.js",
-    "Express.js",
+    "Flutter",
+    "LangChain",
+    "FastAPI",
     "Python",
-    "MongoDB",
     "Java",
-    "langchain",
+    "Docker",
+    "MongoDB",
+    "Express",    
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -172,26 +173,34 @@ certifications: [
       start: "June",
       end: "Oct 2025",
     },
+    {
+      school: "AI Engineering Certification",
+      href: "https://credsverse.com/credentials/407c8c5d-be18-4680-91f0-d1ac2717421e",
+      degree: "Successfully completed 5-month AI Engineering Bootcamp focused on building production-ready AI systems using OpenAI, Pinecone, FastAPI, Next.js, and LangChain/LangGraph for LLM-powered solutions.",
+      logoUrl: "/stem.png",
+      start: "Sep 2025",
+      end: "Feb 2026",
+    }
   ],
 
 
   projects: [
     {
-      title: "Mebius - digital shopping ecosystem",
+      title: "Mebius - Digital Shopping Ecosystem",
       href: "https://my-react-node-app.vercel.app",
       dates: "Jun 2025 - Sep 2025",
       active: true,
       description:
         "•Built a scalable digital shopping ecosystem with Node.js/Express, TypeScript, MongoDB, Clerk authentication, Stripe payments, and AWS S3 storage, following clean architecture principles.",
       technologies: [
-        "Node.js",
+        "React.js",
         "Express",
-        "Typescript",
+        "Node.js",
         "MongoDB",
-        "Clerk",
+        "Typescript",
         "TailwindCSS",
+        "Clerk",
         "Stripe",
-        "AWS S3",
       ],
       links: [
         {
@@ -210,21 +219,21 @@ certifications: [
       //   "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     },
     {
-      title: "ParkNet - Smart Parking Management System",
+      title: "ParkNet - IoT Parking Hub",
       href: "https://tcc-frontend-beta.vercel.app",
       dates: "Aug 2025 - Sep 2025",
       active: true,
       description:
-        "• Built a React TypeScript application with Clerk OAuth authentication, real-time parking management, and Google Maps integration using Vite, Tailwind CSS, and Shadcn/ui.",
+        "• Built ParkNet, a smart parking system connecting an ESP32 IoT prototype with a full-stack web platform, enabling real-time slot detection and reservations using React, TypeScript, Tailwind, Shadcn, Google Maps, Firebase, and Clerk.",
       technologies: [
+        "React.js",
         "Node.js",
         "Express",
-        "Typescript",
         "MongoDB",
+        "Firebase",
+        "Typescript",
         "Clerk",
         "TailwindCSS",
-        "Stripe",
-        "AWS S3",
       ],
       links: [
         {
@@ -241,8 +250,74 @@ certifications: [
       image: "/parknet.png",
       // video:
       //   "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+    },
+    {
+      title: "IKMS – Multi Agent RAG Chat",
+      href: "https://ikms-lake.vercel.app",
+      dates: "Dec 2025 - Jan 2026",
+      active: true,
+      description:
+        "• Developed a multi-agent RAG chat system (IKMS) using LangChain, LangGraph, and OpenAI, enabling intelligent knowledge retrieval through a FastAPI backend, Next.js frontend, and Pinecone vector database.",
+      technologies: [
+        "LangChain",
+        "LangGraph",
+        "Fast API",
+        "Pinecone",
+        "Python",
+        "OpenAI",
+        "Next.js",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://ikms-lake.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ravishanamina174/ikms",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/ikms.png",
+      // video:
+      //   "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+    }, 
+    {
+      title: "Lankasmartmart – Mobile App",
+      href: "",
+      dates: "Feb 2026 - Mar 2026",
+      active: true,
+      description:
+        "• Built LankaSmartMart, a mobile grocery shopping app using Flutter, enabling users in Sri Lanka to browse items, manage carts, and simulate orders with Firebase Authentication, Cloud Firestore, and SQLite for offline data.",
+      technologies: [
+        "Flutter",
+        "Firebase Auth",
+        "Cloud Firestore",
+        "Sqlite",
+        "Google Maps"
+      ],
+      links: [
+        // {
+        //   type: "Website",
+        //   href: "",
+        //   icon: <Icons.globe className="size-3" />,
+        // },
+        {
+          type: "Source",
+          href: "https://github.com/ravishanamina174/lankasmartmart",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/mobile.png",
+      // video:
+      //   "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     }
   ],
+
+
+
+
   hackathons: [
     {
       title: "Hack Western 5",
