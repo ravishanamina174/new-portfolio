@@ -12,6 +12,7 @@ import {Card,CardContent, CardDescription,CardTitle,} from "@/components/ui/card
 import { WarpBackground } from "@/components/ui/warp-background"
 import { PixelImage } from "@/components/ui/pixel-image";
 import { SkillCard } from "@/components/skill-card";
+import { Highlighter } from "../components/ui/highlighter"
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -324,12 +325,29 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="confetti-button">
+
+      <div className="flex justify-center py-7 ">
+      <p>
+        🍓 Crafting modern{" "}
+         <Highlighter action="underline" color="#FF9800">
+            full-stack solutions
+         </Highlighter>{" "}
+        with{" "}
+         <Highlighter action="highlight" color="#90EE90">
+            AI-driven
+         </Highlighter>{" "}
+        innovation.
+      </p>
+      </div>
+
+      {/* <section id="confetti-button">
         <div className="w-full py-1 flex justify-center align-top">
           <ConfettiSideCannons />
         </div>
-      </section>
-      <section id="warp-background">
+      </section> */}
+
+
+      <section id="warp-background" className="py-3">
         <WarpBackground>
           <div className="flex items-center justify-center h-10">
         <Card className="w-90">
