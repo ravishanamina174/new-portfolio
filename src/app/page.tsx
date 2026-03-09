@@ -166,6 +166,17 @@ export default function Page() {
                   />
                 ),
               },
+               
+              {
+                name: "Javascript",
+                icon: (
+                  <img
+                    src="/javascript.svg"
+                    alt="Javascript"
+                    className="w-full h-full"
+                  />
+                ),
+              },
               {
                 name: "Flutter",
                 icon: (
@@ -176,16 +187,7 @@ export default function Page() {
                   />
                 ),
               },
-              {
-                name: "LangChain",
-                icon: (
-                  <img
-                    src="https://cdn.simpleicons.org/langchain"
-                    alt="LangChain"
-                    className="w-full h-full"
-                  />
-                ),
-              },
+
               {
                 name: "FastAPI",
                 icon: (
@@ -193,9 +195,10 @@ export default function Page() {
                     src="https://cdn.simpleicons.org/fastapi"
                     alt="FastAPI"
                     className="w-full h-full"
-                  />
-                ),
-              },
+                    />
+                  ),
+                },
+
               {
                 name: "Python",
                 icon: (
@@ -217,25 +220,16 @@ export default function Page() {
                 ),
               },
               {
-                name: "Docker",
+                name: "Node.js",
                 icon: (
                   <img
-                    src="https://cdn.simpleicons.org/docker"
-                    alt="Docker"
+                    src="https://cdn.simpleicons.org/nodedotjs"
+                    alt="Node.js"
                     className="w-full h-full"
                   />
                 ),
               },
-              {
-                name: "MongoDB",
-                icon: (
-                  <img
-                    src="https://cdn.simpleicons.org/mongodb"
-                    alt="MongoDB"
-                    className="w-full h-full"
-                  />
-                ),
-              },
+
               {
                 name: "Express",
                 icon: (
@@ -246,12 +240,36 @@ export default function Page() {
                   />
                 ),
               },
+              
               {
-                name: "Node.js",
+                name: "MongoDB",
                 icon: (
                   <img
-                    src="https://cdn.simpleicons.org/nodedotjs"
-                    alt="Node.js"
+                  src="https://cdn.simpleicons.org/mongodb"
+                  alt="MongoDB"
+                  className="w-full h-full"
+                  />
+                ),
+              },
+
+
+
+              {
+                name: "LangChain",
+                icon: (
+                  <img
+                    src="https://cdn.simpleicons.org/langchain"
+                    alt="LangChain"
+                    className="w-full h-full"
+                  />
+                ),
+              },
+              {
+                name: "Docker",
+                icon: (
+                  <img
+                    src="https://cdn.simpleicons.org/docker"
+                    alt="Docker"
                     className="w-full h-full"
                   />
                 ),
