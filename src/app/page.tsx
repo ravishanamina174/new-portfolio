@@ -4,15 +4,14 @@ import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { ConfettiSideCannons } from "@/components/confetti-side-cannons";
-
 import {Card,CardContent, CardDescription,CardTitle,} from "@/components/ui/card"
 import { WarpBackground } from "@/components/ui/warp-background"
 import { PixelImage } from "@/components/ui/pixel-image";
+import { SkillCard } from "@/components/skill-card";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -133,21 +132,147 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+
+          {/* build a structured array with name+icon so we can control order */}
+          <div className="flex flex-wrap gap-2">
+            {[
+              {
+                name: "React.js",
+                icon: (
+                  <img
+                    src="https://cdn.simpleicons.org/react"
+                    alt="React.js"
+                    className="w-full h-full"
+                  />
+                ),
+              },
+              {
+                name: "Next.js",
+                icon: (
+                  <img
+                    src="https://cdn.simpleicons.org/nextdotjs"
+                    alt="Next.js"
+                    className="w-full h-full"
+                  />
+                ),
+              },
+              {
+                name: "Typescript",
+                icon: (
+                  <img
+                    src="https://cdn.simpleicons.org/typescript"
+                    alt="Typescript"
+                    className="w-full h-full"
+                  />
+                ),
+              },
+              {
+                name: "Flutter",
+                icon: (
+                  <img
+                    src="https://cdn.simpleicons.org/flutter"
+                    alt="Flutter"
+                    className="w-full h-full"
+                  />
+                ),
+              },
+              {
+                name: "LangChain",
+                icon: (
+                  <img
+                    src="https://cdn.simpleicons.org/langchain"
+                    alt="LangChain"
+                    className="w-full h-full"
+                  />
+                ),
+              },
+              {
+                name: "FastAPI",
+                icon: (
+                  <img
+                    src="https://cdn.simpleicons.org/fastapi"
+                    alt="FastAPI"
+                    className="w-full h-full"
+                  />
+                ),
+              },
+              {
+                name: "Python",
+                icon: (
+                  <img
+                    src="https://cdn.simpleicons.org/python"
+                    alt="Python"
+                    className="w-full h-full"
+                  />
+                ),
+              },
+              {
+                name: "Java",
+                icon: (
+                  <img
+                    src="/java.svg"
+                    alt="Java"
+                    className="w-full h-full"
+                  />
+                ),
+              },
+              {
+                name: "Docker",
+                icon: (
+                  <img
+                    src="https://cdn.simpleicons.org/docker"
+                    alt="Docker"
+                    className="w-full h-full"
+                  />
+                ),
+              },
+              {
+                name: "MongoDB",
+                icon: (
+                  <img
+                    src="https://cdn.simpleicons.org/mongodb"
+                    alt="MongoDB"
+                    className="w-full h-full"
+                  />
+                ),
+              },
+              {
+                name: "Express",
+                icon: (
+                  <img
+                    src="https://cdn.simpleicons.org/express"
+                    alt="Express"
+                    className="w-full h-full"
+                  />
+                ),
+              },
+              {
+                name: "Node.js",
+                icon: (
+                  <img
+                    src="https://cdn.simpleicons.org/nodedotjs"
+                    alt="Node.js"
+                    className="w-full h-full"
+                  />
+                ),
+              },
+            ].map((skill, id) => (
+              <BlurFade
+                key={skill.name}
+                delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+              >
+                <SkillCard name={skill.name} icon={skill.icon} />
               </BlurFade>
             ))}
           </div>
         </div>
       </section>
       <section id="projects">
-        <div className="space-y-12 w-full py-2">
+        <div className="space-y-12 w-full py-5">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                <div className="inline-block rounded-xl bg-foreground text-background px-4 py-1.5 text-sm">
                   My Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
