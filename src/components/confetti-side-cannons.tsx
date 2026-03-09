@@ -13,7 +13,7 @@ export function ConfettiSideCannons() {
       if (Date.now() > end) return
 
       confetti({
-        particleCount: 2,
+        particleCount: 6,
         angle: 60,
         spread: 55,
         startVelocity: 60,
@@ -21,7 +21,7 @@ export function ConfettiSideCannons() {
         colors: colors,
       })
       confetti({
-        particleCount: 2,
+        particleCount: 6,
         angle: 120,
         spread: 55,
         startVelocity: 60,
@@ -36,7 +36,7 @@ export function ConfettiSideCannons() {
   }
 
   return (
-    <div className="relative">
+    <div className="relative ">
       <Button onClick={handleClick}> Give me a 👏🏻</Button>
     </div>
   )
