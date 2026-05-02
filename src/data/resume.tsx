@@ -312,6 +312,39 @@ certifications: [
       image: "/mobile.png",
       // video:
       //   "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+    },
+    {
+      title: "Pettah Transit Hub (Full Stack + AI)",
+      href: "https://pettah-hub-backend.vercel.app",
+      dates: "Apr 2026 - May 2026",
+      active: true,
+      description:
+        "• Engineered Pettah Transit Hub, a full-stack system using Next.js and FastAPI. It integrates a RAG-based AI assistant via LangGraph and Pinecone, while implementing dedicated backend services for real-time bus timetables and secure seat booking to streamline passenger operations.",
+      technologies: [
+        "Fast API",
+        "LangChain",
+        "LangGraph",
+        "Pinecone",
+        "Cloudfare",
+        "Python",
+        "Next.js",
+        "Gemini API"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://pettah-hub-backend.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ravishanamina174/Pettah_Transit_Hub",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/bus.png",
+      // video:
+      //   "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     }
   ],
 
